@@ -11,7 +11,8 @@
 <p align="center">
   <a href="NewCustomer.jmx">Explore the test plan</a> ·
   <a href="customers.csv">View the test data</a> ·
-  <a href="figures/jmeter-dashboard.png">See the JMeter dashboard</a>
+  <a href="report/index.html">Open the HTML report</a> ·
+  <a href="figures/jmeter-dashboard.png">See the dashboard screenshot</a>
 </p>
 
 ## Project at a glance
@@ -27,11 +28,13 @@
 
 - `NewCustomer.jmx` — the runnable test plan.
 - `customers.csv` — ten customer rows. The email prefix is combined with the current time and thread number, so every registration uses a new email.
+- `results.jtl` — raw results from the verified final load run.
+- `report/` — complete Apache JMeter HTML dashboard; open `report/index.html` locally in a browser.
 - `figures/journey-completion.png` — completion counts from the verified run.
 - `figures/response-times.png` — mean and p95 timings from the verified run.
 - `figures/jmeter-dashboard.png` and `figures/jmeter-response-times.png` — screenshots from the generated Apache JMeter HTML report.
 
-Raw JMeter results (`results.jtl`) and the generated HTML dashboard (`report/`) are kept out of Git. Generate them locally when you run the plan. The assignment submission ZIP, which includes these files, is separate from this GitHub folder.
+The verified final run’s `results.jtl` and complete `report/` are included because they are required assignment deliverables. Diagnostic runs, logs, and ZIP submissions are not included.
 
 ## User journey
 
@@ -91,4 +94,4 @@ These numbers describe one local run, not a capacity limit. Stock decreases when
 - Product lists return `items`; the cart returns `totalItems`. JSONPath names are case sensitive.
 - Checkout requires `shippingAddress` and `paymentMethod`. This backend records the payment method but does not process a real payment.
 
-The JMX and CSV are portable together because the CSV filename in the plan is relative (`customers.csv`). Generated JTL files, HTML dashboards, logs, and ZIP submissions are ignored by Git.
+The JMX and CSV are portable together because the CSV filename in the plan is relative (`customers.csv`). The committed `results.jtl` and `report/` document one verified run. Use a new `run-*` directory for later runs; those directories, logs, and ZIP submissions are ignored by Git.
