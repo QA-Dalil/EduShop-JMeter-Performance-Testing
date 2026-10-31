@@ -53,6 +53,66 @@
           <stringProp name="variableNames">firstName,lastName,emailPrefix,password,confirmPassword,category,searchTerm,shippingAddress,paymentMethod</stringProp>
         </CSVDataSet>
         <hashTree />
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="01 - Register New Customer">
+          <stringProp name="HTTPSampler.path">api/auth/register</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{
+
+  "FirstName": "${firstName}",
+
+  "LastName": "${lastName}",
+
+  "Email": "${uniqueEmail}",
+
+  "Password": "${password}",
+
+  "ConfirmPassword": "${confirmPassword}"
+
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="Generate Unique Email">
+            <stringProp name="filename" />
+            <stringProp name="parameters" />
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="script">String uniqueEmail =
+    vars.get("emailPrefix") + "_" +
+    System.currentTimeMillis() + "_" +
+    (ctx.getThreadNum() + 1) +
+    "@test.com";
+
+vars.put("uniqueEmail", uniqueEmail);</stringProp>
+          </BeanShellPreProcessor>
+          <hashTree />
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract Access Token">
+            <stringProp name="JSONPostProcessor.referenceNames">accessToken</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.accessToken</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">NOT_FOUND</stringProp>
+          </JSONPostProcessor>
+          <hashTree />
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert Registration Success">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message" />
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+          </ResponseAssertion>
+          <hashTree />
+        </hashTree>
         <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Variables (enable only for diagnosis)" enabled="false">
           <boolProp name="JMeter.debugSampler.displayJMeterProperties">false</boolProp>
           <boolProp name="JMeter.debugSampler.displayJMeterVariables">true</boolProp>
