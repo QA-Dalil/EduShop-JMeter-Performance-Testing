@@ -1,0 +1,141 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1793463254683,1358,01 - Register New Customer,200,OK,New Customers 1-2,text,true,,1146,391,3,3,http://localhost:5000/api/auth/register,1355,0,112
+1793463254611,1430,01 - Register New Customer,200,OK,New Customers 1-1,text,true,,1146,391,3,3,http://localhost:5000/api/auth/register,1427,0,184
+1793463256531,145,02 - Load Home Page,200,"Number of samples in transaction : 2, number of failing samples : 0",New Customers 1-1,,true,,7893,1905,4,4,null,0,14,0
+1793463256534,58,02.1 - Get Categories,200,OK,New Customers 1-1,text,true,,3282,927,3,3,http://localhost:5000/api/category,57,0,0
+1793463256598,87,02.2 - Get Products,200,OK,New Customers 1-1,text,true,,4611,978,4,4,http://localhost:5000/api/product?Page=1&PageSize=12&SortBy=name&SortDescending=false,86,0,0
+1793463256531,153,02 - Load Home Page,200,"Number of samples in transaction : 2, number of failing samples : 0",New Customers 1-2,,true,,7893,1905,4,4,null,0,19,0
+1793463256534,46,02.1 - Get Categories,200,OK,New Customers 1-2,text,true,,3282,927,3,3,http://localhost:5000/api/category,45,0,0
+1793463256593,107,02.2 - Get Products,200,OK,New Customers 1-2,text,true,,4611,978,4,4,http://localhost:5000/api/product?Page=1&PageSize=12&SortBy=name&SortDescending=false,106,0,0
+1793463255648,1133,01 - Register New Customer,200,OK,New Customers 1-3,text,true,,1143,390,4,4,http://localhost:5000/api/auth/register,1132,0,8
+1793463256789,85,02 - Load Home Page,200,"Number of samples in transaction : 2, number of failing samples : 0",New Customers 1-3,,true,,7893,1903,4,4,null,0,7,0
+1793463256791,38,02.1 - Get Categories,200,OK,New Customers 1-3,text,true,,3282,926,4,4,http://localhost:5000/api/category,38,0,0
+1793463256832,47,02.2 - Get Products,200,OK,New Customers 1-3,text,true,,4611,977,4,4,http://localhost:5000/api/product?Page=1&PageSize=12&SortBy=name&SortDescending=false,47,0,0
+1793463257317,34,03 - Newest,200,OK,New Customers 1-1,text,true,,1736,1001,4,4,http://localhost:5000/api/product?Category=Electronics&Page=1&PageSize=12&SortBy=created&SortDescending=true,33,0,0
+1793463257359,38,06.2.1 - Search Products,200,OK,New Customers 1-1,text,true,,649,966,4,4,http://localhost:5000/api/product?SearchTerm=Bluetooth&Page=1&PageSize=12,38,0,0
+1793463257405,242,03 - Name,200,OK,New Customers 1-2,text,true,,1730,993,4,4,http://localhost:5000/api/product?Category=Books&Page=1&PageSize=12&SortBy=name&SortDescending=false,241,0,0
+1793463257657,47,05.1.1 - Get Product Details,200,OK,New Customers 1-2,text,true,,524,929,5,5,http://localhost:5000/api/product/13,47,0,0
+1793463256678,1036,01 - Register New Customer,200,OK,New Customers 1-4,text,true,,1146,391,5,5,http://localhost:5000/api/auth/register,1036,0,12
+1793463257709,45,05.1.2 - Get Product Reviews,200,OK,New Customers 1-2,text,true,,160,936,5,5,http://localhost:5000/api/review/product/13,45,0,0
+1793463257541,240,06.2.2 - Quick Add to Cart,200,OK,New Customers 1-1,text,true,,410,987,5,5,http://localhost:5000/api/cart/items,240,0,0
+1793463257760,122,03 - Name,200,OK,New Customers 1-3,text,true,,1684,993,5,5,http://localhost:5000/api/product?Category=Sports&Page=1&PageSize=12&SortBy=name&SortDescending=false,121,0,0
+1793463257793,99,05.1.1 - Get Product Details,200,OK,New Customers 1-1,text,true,,517,928,5,5,http://localhost:5000/api/product/3,98,0,0
+1793463257724,173,02 - Load Home Page,200,"Number of samples in transaction : 2, number of failing samples : 0",New Customers 1-4,,true,,7893,1905,5,5,null,0,12,0
+1793463257726,69,02.1 - Get Categories,200,OK,New Customers 1-4,text,true,,3282,927,5,5,http://localhost:5000/api/category,69,0,0
+1793463257803,104,02.2 - Get Products,200,OK,New Customers 1-4,text,true,,4611,978,5,5,http://localhost:5000/api/product?Page=1&PageSize=12&SortBy=name&SortDescending=false,104,0,0
+1793463257898,71,05.1.1 - Get Product Details,200,OK,New Customers 1-3,text,true,,518,928,5,5,http://localhost:5000/api/product/15,71,0,0
+1793463257896,75,05.1.2 - Get Product Reviews,200,OK,New Customers 1-1,text,true,,160,935,5,5,http://localhost:5000/api/review/product/3,75,0,0
+1793463257973,62,05.1.2 - Get Product Reviews,200,OK,New Customers 1-3,text,true,,160,935,5,5,http://localhost:5000/api/review/product/15,62,0,0
+1793463257760,1304,06.1.3 - Add to Wishlist,200,OK,New Customers 1-2,text,true,,401,950,6,6,http://localhost:5000/api/wishlist/13,1304,0,0
+1793463258039,1026,06.1.3 - Add to Wishlist,200,OK,New Customers 1-3,text,true,,403,949,6,6,http://localhost:5000/api/wishlist/15,1025,0,0
+1793463257974,1097,06.1.3 - Add to Wishlist,200,OK,New Customers 1-1,text,true,,386,949,6,6,http://localhost:5000/api/wishlist/3,1097,0,0
+1793463258986,99,03 - Price Low to High,200,OK,New Customers 1-4,text,true,,1378,1005,6,6,http://localhost:5000/api/product?Category=Home+%26+Kitchen&Page=1&PageSize=12&SortBy=price&SortDescending=false,99,0,0
+1793463259067,87,06.2.1 - Search Products,200,OK,New Customers 1-2,text,true,,633,966,6,6,http://localhost:5000/api/product?SearchTerm=Pragmatic&Page=1&PageSize=12,87,0,0
+1793463259072,85,06.2.1 - Search Products,200,OK,New Customers 1-3,text,true,,627,963,6,6,http://localhost:5000/api/product?SearchTerm=T-Shirt&Page=1&PageSize=12,85,0,0
+1793463259093,67,06.2.1 - Search Products,200,OK,New Customers 1-4,text,true,,639,963,6,6,http://localhost:5000/api/product?SearchTerm=Vacuum&Page=1&PageSize=12,67,0,0
+1793463259078,97,07 - View Cart,200,OK,New Customers 1-1,text,true,,410,923,6,6,http://localhost:5000/api/cart,96,0,0
+1793463259209,88,08.1 - Open Checkout Page,200,OK,New Customers 1-1,text,true,,410,923,6,6,http://localhost:5000/api/cart,88,0,0
+1793463259161,391,06.2.2 - Quick Add to Cart,200,OK,New Customers 1-2,text,true,,402,988,6,6,http://localhost:5000/api/cart/items,391,0,0
+1793463257665,1918,01 - Register New Customer,200,OK,New Customers 1-5,text,true,,1142,389,6,6,http://localhost:5000/api/auth/register,1918,0,4
+1793463259556,39,07 - View Cart,200,OK,New Customers 1-2,text,true,,402,923,6,6,http://localhost:5000/api/cart,39,0,0
+1793463259205,431,06.2.2 - Quick Add to Cart,200,OK,New Customers 1-4,text,true,,398,988,6,6,http://localhost:5000/api/cart/items,431,0,0
+1793463259190,453,06.2.2 - Quick Add to Cart,200,OK,New Customers 1-3,text,true,,395,986,6,6,http://localhost:5000/api/cart/items,452,0,0
+1793463259603,93,08.1 - Open Checkout Page,200,OK,New Customers 1-2,text,true,,402,923,6,6,http://localhost:5000/api/cart,93,0,0
+1793463259643,132,05.1.1 - Get Product Details,200,OK,New Customers 1-4,text,true,,535,929,7,7,http://localhost:5000/api/product/20,130,0,0
+1793463259653,123,07 - View Cart,200,OK,New Customers 1-3,text,true,,395,922,7,7,http://localhost:5000/api/cart,122,0,0
+1793463259591,182,02 - Load Home Page,200,"Number of samples in transaction : 2, number of failing samples : 0",New Customers 1-5,,true,,7893,1901,7,7,null,0,7,0
+1793463259592,69,02.1 - Get Categories,200,OK,New Customers 1-5,text,true,,3282,925,6,6,http://localhost:5000/api/category,69,0,0
+1793463259667,113,02.2 - Get Products,200,OK,New Customers 1-5,text,true,,4611,976,7,7,http://localhost:5000/api/product?Page=1&PageSize=12&SortBy=name&SortDescending=false,112,0,0
+1793463259780,100,05.1.2 - Get Product Reviews,200,OK,New Customers 1-4,text,true,,160,936,7,7,http://localhost:5000/api/review/product/20,100,0,0
+1793463259793,105,08.1 - Open Checkout Page,200,OK,New Customers 1-3,text,true,,395,922,7,7,http://localhost:5000/api/cart,104,0,0
+1793463259886,218,06.1.3 - Add to Wishlist,200,OK,New Customers 1-4,text,true,,400,950,7,7,http://localhost:5000/api/wishlist/20,218,0,0
+1793463260107,36,07 - View Cart,200,OK,New Customers 1-4,text,true,,398,923,7,7,http://localhost:5000/api/cart,36,0,0
+1793463260149,57,08.1 - Open Checkout Page,200,OK,New Customers 1-4,text,true,,398,923,7,7,http://localhost:5000/api/cart,57,0,0
+1793463260515,37,03 - Price High to Low,200,OK,New Customers 1-5,text,true,,1684,992,7,7,http://localhost:5000/api/product?Category=Sports&Page=1&PageSize=12&SortBy=price&SortDescending=true,37,0,0
+1793463258685,1885,01 - Register New Customer,200,OK,New Customers 1-6,text,true,,1145,391,7,7,http://localhost:5000/api/auth/register,1885,0,45
+1793463260560,31,05.1.1 - Get Product Details,200,OK,New Customers 1-5,text,true,,512,927,7,7,http://localhost:5000/api/product/17,31,0,0
+1793463260596,58,05.1.2 - Get Product Reviews,200,OK,New Customers 1-5,text,true,,160,934,8,8,http://localhost:5000/api/review/product/17,58,0,0
+1793463260579,171,02 - Load Home Page,200,"Number of samples in transaction : 2, number of failing samples : 0",New Customers 1-6,,true,,7893,1905,8,8,null,0,5,0
+1793463260580,53,02.1 - Get Categories,200,OK,New Customers 1-6,text,true,,3282,927,7,7,http://localhost:5000/api/category,52,0,0
+1793463260636,118,02.2 - Get Products,200,OK,New Customers 1-6,text,true,,4611,978,8,8,http://localhost:5000/api/product?Page=1&PageSize=12&SortBy=name&SortDescending=false,117,0,0
+1793463260658,410,06.1.3 - Add to Wishlist,200,OK,New Customers 1-5,text,true,,392,948,8,8,http://localhost:5000/api/wishlist/17,410,0,0
+1793463261072,57,06.2.1 - Search Products,200,OK,New Customers 1-5,text,true,,621,963,8,8,http://localhost:5000/api/product?SearchTerm=Swimming&Page=1&PageSize=12,57,0,0
+1793463261138,326,06.2.2 - Quick Add to Cart,200,OK,New Customers 1-5,text,true,,392,986,8,8,http://localhost:5000/api/cart/items,326,0,0
+1793463261374,117,03 - Price High to Low,200,OK,New Customers 1-6,text,true,,1340,994,8,8,http://localhost:5000/api/product?Category=Beauty&Page=1&PageSize=12&SortBy=price&SortDescending=true,117,0,0
+1793463261467,57,07 - View Cart,200,OK,New Customers 1-5,text,true,,392,921,8,8,http://localhost:5000/api/cart,57,0,0
+1793463259797,1766,01 - Register New Customer,200,OK,New Customers 1-7,text,true,,1149,392,8,8,http://localhost:5000/api/auth/register,1765,0,7
+1793463261531,51,08.1 - Open Checkout Page,200,OK,New Customers 1-5,text,true,,392,921,8,8,http://localhost:5000/api/cart,51,0,0
+1793463261497,86,06.2.1 - Search Products,200,OK,New Customers 1-6,text,true,,613,962,8,8,http://localhost:5000/api/product?SearchTerm=Serum&Page=1&PageSize=12,85,0,0
+1793463261571,177,02 - Load Home Page,200,"Number of samples in transaction : 2, number of failing samples : 0",New Customers 1-7,,true,,7893,1909,9,9,null,0,6,0
+1793463261572,71,02.1 - Get Categories,200,OK,New Customers 1-7,text,true,,3282,929,8,8,http://localhost:5000/api/category,71,0,0
+1793463261646,106,02.2 - Get Products,200,OK,New Customers 1-7,text,true,,4611,980,9,9,http://localhost:5000/api/product?Page=1&PageSize=12&SortBy=name&SortDescending=false,106,0,0
+1793463261591,257,06.2.2 - Quick Add to Cart,200,OK,New Customers 1-6,text,true,,385,988,9,9,http://localhost:5000/api/cart/items,257,0,0
+1793463259306,2584,08.2 - Place Order,201,Created,New Customers 1-1,text,true,,727,1044,9,9,http://localhost:5000/api/order,2584,0,0
+1793463260209,1681,08.2 - Place Order,201,Created,New Customers 1-4,text,true,,704,1032,9,9,http://localhost:5000/api/order,1680,0,0
+1793463259699,2198,08.2 - Place Order,201,Created,New Customers 1-2,text,true,,721,1047,9,9,http://localhost:5000/api/order,2197,0,0
+1793463261852,49,05.1.1 - Get Product Details,200,OK,New Customers 1-6,text,true,,527,929,9,9,http://localhost:5000/api/product/23,41,0,0
+1793463259901,1999,08.2 - Place Order,201,Created,New Customers 1-3,text,true,,716,1049,9,9,http://localhost:5000/api/order,1988,0,0
+1793463261904,35,05.1.2 - Get Product Reviews,200,OK,New Customers 1-6,text,true,,160,936,9,9,http://localhost:5000/api/review/product/23,34,0,0
+1793463261893,117,09 - Logout,200,OK,New Customers 1-4,text,true,,197,950,9,9,http://localhost:5000/api/auth/logout,117,0,0
+1793463261901,109,09 - Logout,200,OK,New Customers 1-2,text,true,,197,950,9,9,http://localhost:5000/api/auth/logout,109,0,0
+1793463261894,117,09 - Logout,200,OK,New Customers 1-1,text,true,,197,950,9,9,http://localhost:5000/api/auth/logout,116,0,0
+1793463261905,156,09 - Logout,200,OK,New Customers 1-3,text,true,,197,949,6,6,http://localhost:5000/api/auth/logout,156,0,0
+1793463261585,514,08.2 - Place Order,201,Created,New Customers 1-5,text,true,,708,1045,5,5,http://localhost:5000/api/order,514,0,0
+1793463261942,229,06.1.3 - Add to Wishlist,200,OK,New Customers 1-6,text,true,,402,950,5,5,http://localhost:5000/api/wishlist/23,229,0,0
+1793463262103,87,09 - Logout,200,OK,New Customers 1-5,text,true,,197,948,5,5,http://localhost:5000/api/auth/logout,87,0,0
+1793463262177,49,07 - View Cart,200,OK,New Customers 1-6,text,true,,385,923,4,4,http://localhost:5000/api/cart,49,0,0
+1793463262233,38,08.1 - Open Checkout Page,200,OK,New Customers 1-6,text,true,,385,923,4,4,http://localhost:5000/api/cart,38,0,0
+1793463260668,1846,01 - Register New Customer,200,OK,New Customers 1-8,text,true,,1149,392,4,4,http://localhost:5000/api/auth/register,1846,0,4
+1793463262274,367,08.2 - Place Order,201,Created,New Customers 1-6,text,true,,699,1044,4,4,http://localhost:5000/api/order,367,0,0
+1793463262522,118,02 - Load Home Page,200,"Number of samples in transaction : 2, number of failing samples : 0",New Customers 1-8,,true,,7893,1909,4,4,null,0,5,0
+1793463262523,28,02.1 - Get Categories,200,OK,New Customers 1-8,text,true,,3282,929,4,4,http://localhost:5000/api/category,28,0,0
+1793463262554,90,02.2 - Get Products,200,OK,New Customers 1-8,text,true,,4611,980,4,4,http://localhost:5000/api/product?Page=1&PageSize=12&SortBy=name&SortDescending=false,90,0,0
+1793463262594,108,03 - Price Low to High,200,OK,New Customers 1-7,text,true,,1735,1002,5,5,http://localhost:5000/api/product?Category=Electronics&Page=1&PageSize=12&SortBy=price&SortDescending=false,108,0,0
+1793463262645,95,09 - Logout,200,OK,New Customers 1-6,text,true,,197,950,5,5,http://localhost:5000/api/auth/logout,95,0,0
+1793463262710,55,05.1.1 - Get Product Details,200,OK,New Customers 1-7,text,true,,517,930,4,4,http://localhost:5000/api/product/3,55,0,0
+1793463262767,53,05.1.2 - Get Product Reviews,200,OK,New Customers 1-7,text,true,,160,937,4,4,http://localhost:5000/api/review/product/3,52,0,0
+1793463262825,208,06.1.3 - Add to Wishlist,200,OK,New Customers 1-7,text,true,,387,951,4,4,http://localhost:5000/api/wishlist/3,208,0,0
+1793463263037,55,06.2.1 - Search Products,200,OK,New Customers 1-7,text,true,,626,969,4,4,http://localhost:5000/api/product?SearchTerm=Smartphone&Page=1&PageSize=12,55,0,0
+1793463263101,264,06.2.2 - Quick Add to Cart,200,OK,New Customers 1-7,text,true,,389,989,4,4,http://localhost:5000/api/cart/items,263,0,0
+1793463261694,1685,01 - Register New Customer,200,OK,New Customers 1-9,text,true,,1146,391,4,4,http://localhost:5000/api/auth/register,1685,0,8
+1793463263369,43,07 - View Cart,200,OK,New Customers 1-7,text,true,,389,925,4,4,http://localhost:5000/api/cart,42,0,0
+1793463263417,48,08.1 - Open Checkout Page,200,OK,New Customers 1-7,text,true,,389,925,4,4,http://localhost:5000/api/cart,48,0,0
+1793463263386,116,02 - Load Home Page,200,"Number of samples in transaction : 2, number of failing samples : 0",New Customers 1-9,,true,,7893,1905,4,4,null,0,5,0
+1793463263387,53,02.1 - Get Categories,200,OK,New Customers 1-9,text,true,,3282,927,4,4,http://localhost:5000/api/category,53,0,0
+1793463263443,63,02.2 - Get Products,200,OK,New Customers 1-9,text,true,,4611,978,4,4,http://localhost:5000/api/product?Page=1&PageSize=12&SortBy=name&SortDescending=false,63,0,0
+1793463263469,274,08.2 - Place Order,201,Created,New Customers 1-7,text,true,,701,1038,4,4,http://localhost:5000/api/order,274,0,0
+1793463263746,69,09 - Logout,200,OK,New Customers 1-7,text,true,,197,952,4,4,http://localhost:5000/api/auth/logout,68,0,0
+1793463263796,75,03 - Newest,200,OK,New Customers 1-8,text,true,,1729,997,3,3,http://localhost:5000/api/product?Category=Books&Page=1&PageSize=12&SortBy=created&SortDescending=true,74,0,0
+1793463263877,43,05.1.1 - Get Product Details,200,OK,New Customers 1-8,text,true,,524,931,3,3,http://localhost:5000/api/product/13,42,0,0
+1793463263925,26,05.1.2 - Get Product Reviews,200,OK,New Customers 1-8,text,true,,160,938,3,3,http://localhost:5000/api/review/product/13,25,0,0
+1793463264068,89,03 - Name,200,OK,New Customers 1-9,text,true,,1339,994,3,3,http://localhost:5000/api/product?Category=Beauty&Page=1&PageSize=12&SortBy=name&SortDescending=false,89,0,0
+1793463263954,226,06.1.3 - Add to Wishlist,200,OK,New Customers 1-8,text,true,,401,952,3,3,http://localhost:5000/api/wishlist/13,225,0,0
+1793463264164,68,05.1.1 - Get Product Details,200,OK,New Customers 1-9,text,true,,527,929,3,3,http://localhost:5000/api/product/23,68,0,0
+1793463264186,81,06.2.1 - Search Products,200,OK,New Customers 1-8,text,true,,1372,964,3,3,http://localhost:5000/api/product?SearchTerm=Clean&Page=1&PageSize=12,81,0,0
+1793463264238,49,05.1.2 - Get Product Reviews,200,OK,New Customers 1-9,text,true,,160,936,3,3,http://localhost:5000/api/review/product/23,48,0,0
+1793463262724,1618,01 - Register New Customer,200,OK,New Customers 1-10,text,true,,1144,390,3,3,http://localhost:5000/api/auth/register,1617,0,6
+1793463264281,263,06.2.2 - Quick Add to Cart,200,OK,New Customers 1-8,text,true,,396,990,3,3,http://localhost:5000/api/cart/items,263,0,0
+1793463264358,184,02 - Load Home Page,200,"Number of samples in transaction : 2, number of failing samples : 0",New Customers 1-10,,true,,7893,1903,3,3,null,0,5,0
+1793463264359,76,02.1 - Get Categories,200,OK,New Customers 1-10,text,true,,3282,926,3,3,http://localhost:5000/api/category,75,0,0
+1793463264437,108,02.2 - Get Products,200,OK,New Customers 1-10,text,true,,4611,977,3,3,http://localhost:5000/api/product?Page=1&PageSize=12&SortBy=name&SortDescending=false,107,0,0
+1793463264290,329,06.1.3 - Add to Wishlist,200,OK,New Customers 1-9,text,true,,402,950,3,3,http://localhost:5000/api/wishlist/23,329,0,0
+1793463264547,72,07 - View Cart,200,OK,New Customers 1-8,text,true,,396,925,3,3,http://localhost:5000/api/cart,72,0,0
+1793463264625,91,08.1 - Open Checkout Page,200,OK,New Customers 1-8,text,true,,396,925,3,3,http://localhost:5000/api/cart,91,0,0
+1793463264622,100,06.2.1 - Search Products,200,OK,New Customers 1-9,text,true,,622,963,3,3,http://localhost:5000/api/product?SearchTerm=Jacket&Page=1&PageSize=12,100,0,0
+1793463264728,363,06.2.2 - Quick Add to Cart,200,OK,New Customers 1-9,text,true,,394,987,3,3,http://localhost:5000/api/cart/items,362,0,0
+1793463265093,27,07 - View Cart,200,OK,New Customers 1-9,text,true,,394,923,3,3,http://localhost:5000/api/cart,27,0,0
+1793463265125,29,08.1 - Open Checkout Page,200,OK,New Customers 1-9,text,true,,394,923,3,3,http://localhost:5000/api/cart,28,0,0
+1793463264721,511,08.2 - Place Order,201,Created,New Customers 1-8,text,true,,721,1056,3,3,http://localhost:5000/api/order,510,0,0
+1793463265236,66,09 - Logout,200,OK,New Customers 1-8,text,true,,197,952,3,3,http://localhost:5000/api/auth/logout,66,0,0
+1793463265157,249,08.2 - Place Order,201,Created,New Customers 1-9,text,true,,715,1048,2,2,http://localhost:5000/api/order,248,0,0
+1793463265505,38,03 - Price Low to High,200,OK,New Customers 1-10,text,true,,1377,1004,2,2,http://localhost:5000/api/product?Category=Home+%26+Kitchen&Page=1&PageSize=12&SortBy=price&SortDescending=false,37,0,0
+1793463265410,167,09 - Logout,200,OK,New Customers 1-9,text,true,,197,950,2,2,http://localhost:5000/api/auth/logout,167,0,0
+1793463265559,42,05.1.1 - Get Product Details,200,OK,New Customers 1-10,text,true,,529,928,1,1,http://localhost:5000/api/product/21,41,0,0
+1793463265603,25,05.1.2 - Get Product Reviews,200,OK,New Customers 1-10,text,true,,160,935,1,1,http://localhost:5000/api/review/product/21,24,0,0
+1793463265631,155,06.1.3 - Add to Wishlist,200,OK,New Customers 1-10,text,true,,396,949,1,1,http://localhost:5000/api/wishlist/21,155,0,0
+1793463265789,41,06.2.1 - Search Products,200,OK,New Customers 1-10,text,true,,631,961,1,1,http://localhost:5000/api/product?SearchTerm=Maker&Page=1&PageSize=12,41,0,0
+1793463265837,168,06.2.2 - Quick Add to Cart,200,OK,New Customers 1-10,text,true,,393,987,1,1,http://localhost:5000/api/cart/items,168,0,0
+1793463266008,39,07 - View Cart,200,OK,New Customers 1-10,text,true,,393,922,1,1,http://localhost:5000/api/cart,39,0,0
+1793463266054,40,08.1 - Open Checkout Page,200,OK,New Customers 1-10,text,true,,393,922,1,1,http://localhost:5000/api/cart,38,0,0
+1793463266098,230,08.2 - Place Order,201,Created,New Customers 1-10,text,true,,698,1033,1,1,http://localhost:5000/api/order,230,0,0
+1793463266332,155,09 - Logout,200,OK,New Customers 1-10,text,true,,197,949,1,1,http://localhost:5000/api/auth/logout,154,0,0
