@@ -1,0 +1,11 @@
+firstName,lastName,emailPrefix,password,confirmPassword,category,searchTerm,shippingAddress,paymentMethod
+Rahaf,Ahmad,customer01,EduShop@2026!,EduShop@2026!,Electronics,Bluetooth,"Rainbow Street, Jabal Amman, Amman, Jordan",Card
+Sara,Khaled,customer02,EduShop@2026!,EduShop@2026!,Books,Pragmatic,"University Street, Irbid, Jordan",Cash on Delivery
+Omar,Saleh,customer03,EduShop@2026!,EduShop@2026!,Sports,T-Shirt,"King Abdullah II Street, Zarqa, Jordan",Bank Transfer
+Lina,Hassan,customer04,EduShop@2026!,EduShop@2026!,Home & Kitchen,Vacuum,"Al Saada Street, Aqaba, Jordan",Card
+Yazan,Ali,customer05,EduShop@2026!,EduShop@2026!,Sports,Swimming,"Palestine Street, Madaba, Jordan",Cash on Delivery
+Maya,Nasser,customer06,EduShop@2026!,EduShop@2026!,Beauty,Serum,"King Hussein Street, Salt, Jordan",Bank Transfer
+Adam,Mahmoud,customer07,EduShop@2026!,EduShop@2026!,Electronics,Smartphone,"Wasfi Al Tal Street, Amman, Jordan",Card
+Dana,Ibrahim,customer08,EduShop@2026!,EduShop@2026!,Books,Clean,"Petra Tourist Street, Wadi Musa, Jordan",Cash on Delivery
+Zaid,Hamdan,customer09,EduShop@2026!,EduShop@2026!,Beauty,Jacket,"Prince Hassan Street, Jerash, Jordan",Bank Transfer
+Noor,Sami,customer10,EduShop@2026!,EduShop@2026!,Home & Kitchen,Maker,"Al Hashimi Street, Karak, Jordan",Card

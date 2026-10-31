@@ -1,0 +1,6 @@
+run-*/
+results*.jtl
+report/
+*.log
+*.zip
+.DS_Store
