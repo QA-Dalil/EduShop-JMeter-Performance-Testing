@@ -49,7 +49,7 @@ The plan includes the required JMeter controllers, JSON extractors, assertions, 
 
 ## Verified result
 
-The local run on **31 October 2026** completed all ten customer journeys with **0 failures**. All ten registration, wishlist, quick-add, and logout requests succeeded; all ten orders returned HTTP 201. The screenshots below come from that run's JMeter HTML report.
+The local run on **31 October 2026** completed all ten customer journeys with **0 failures**. All ten registration, wishlist, quick-add, and logout requests succeeded; all ten orders returned HTTP 201. Registration and order placement had the highest mean times (1,568 ms and 1,061 ms); home-page load averaged 150 ms. These are observations from one small run, not capacity limits. The screenshots below come from that run's JMeter HTML report.
 
 ![JMeter dashboard showing 100% passing requests](figures/jmeter-dashboard.png)
 
