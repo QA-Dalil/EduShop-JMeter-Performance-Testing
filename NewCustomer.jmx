@@ -113,6 +113,22 @@ vars.put("uniqueEmail", uniqueEmail);</stringProp>
           </ResponseAssertion>
           <hashTree />
         </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="Continue Only If Registered">
+          <stringProp name="IfController.condition">${__jexl3("${accessToken}" != "NOT_FOUND" &amp;&amp; "${accessToken}" != "")}</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+          <boolProp name="IfController.useExpression">true</boolProp>
+        </IfController>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Authenticated Headers">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer ${accessToken}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree />
+        </hashTree>
         <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Variables (enable only for diagnosis)" enabled="false">
           <boolProp name="JMeter.debugSampler.displayJMeterProperties">false</boolProp>
           <boolProp name="JMeter.debugSampler.displayJMeterVariables">true</boolProp>
