@@ -1,4 +1,4 @@
-<h1 align="center">EduShop JMeter Performance Test</h1>
+<h1 align="center">EduShop JMeter Performance Testing</h1>
 <p align="center"><strong>The New Customer Journey</strong></p>
 <p align="center">10 customers · 4 random sort options · 2 shopping paths · 10 completed orders</p>
 <p align="center">
